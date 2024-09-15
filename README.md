@@ -7,20 +7,16 @@ I wanted to focus my question within the context of game development. Specifical
 
 ## My Conversation with Chat GPT-4o (Paid version)
 ### What makes a programming language viable or not viable for game development?
-GPT had a lot to say about what makes a programming language viable or not viable for game development. Much of its answer lay outside the scope of my direct line of questioning, such as community & tools, learning curve, and suitability for different game genres. It also spoke on game engine support & language integration, which I wasn't as interested in given the availability of plugins to support non-native languages. I was most interested in what it had to say about performance requirements and platform compatibility.
+GPT had a lot to say about what makes a programming language viable or not viable for game development. The factors I was most interested in revolved around performance, memory management, platform compatibility, and the language's impact on the development cycle. Something I have learned over many years of game development is that the accessibility of a programming language, from IDE support to readability to library & tools, are crucial factors to consider. The choice of language does not necessarily lie in the hands of the developer, however, and rather depends a lot on the game engine of choice. This limitation can typically be offset by using compatible plugins to bind non-native scripts to the engine. 
 
-    1. Performance
-    - Real-time computation: Games, especially 3D or real-time ones, require fast execution to handle physics calculations, rendering, and AI. Languages like C++ are popular in game development because of their ability to offer low-level memory management and performance optimizations.
-    - Multithreading: Modern games often require parallel processing for tasks like rendering, physics, AI, and networking. Languages with strong multithreading capabilities are more suited for handling these needs efficiently.
-    
-    2. Memory Management
-    - Manual vs. Automatic Memory Management: Languages that offer fine-grained control over memory allocation (like C++ and C) are preferred for performance-critical parts of a game (e.g., large game worlds, simulations). On the other hand, languages with garbage collection (e.g., Java, C#) may introduce performance issues like garbage collection pauses, though these issues have been mitigated in many cases.
-    - Memory Efficiency: Games need to be optimized for a variety of devices (consoles, PCs, mobile), making memory efficiency critical. Languages that give developers control over memory allocation are often favored in this context.
-    
-    3. Platform Compatibility
-    - Cross-platform development: Many games need to be developed for multiple platforms (PC, consoles, mobile). Languages that are supported by game engines with multi-platform capabilities (like C# in Unity or C++ in Unreal Engine) are highly viable.
-    - Toolchain support: The programming language should integrate well with development tools (e.g., game engines, debuggers, profiling tools) to ensure smooth game creation and deployment across different platforms.
-    
+In general, games require fast execution and optimized frame cycles. Intensive systems, such as physics simulations, rendering, and AI, rely heavily on platform hardware. DSLs (domain-specific languages) play a pivotal role within this context in game development. Shader graphs, for example, are a type of DSL that specifically handles the computation of shaders. Shader graph code runs directly on the GPU, which is optimal for rendering operations. 
+
+Other capabilities, such as multi-threading and memory management, are important factors to consider as well. Direct control over memory allocation and manual garbage collection allows for performance optimizations, especially when considering the various capabilities and hardware specifications of different platforms. However, using a language that allows for these capabilities is not necessarily the correct decision. The scope of the game is the most important factor to consider when deciding what characteristics of one's programming language are necessary. A small title, such as a simple 2D platformer game, typically has no need for this level of hardware access. If not needed, the developer would almost always be better off choosing a higher-level language further from the hardware due to accessibility factors.
+
+In general, low-level languages such as C++ are suitable for complex titles where hardware systems and script behavior can be monitored and manipulated manually. The target platform is also a point of consideration, as consoles are only compatible with source code written in C, C++, and C#. Most console publishers require that application source code go through their own toolchain, which means that unsupported languages are not compatible by default.
+
+GPT's answer also touched on the following important topics:
+
     5. Development Speed and Ease of Use
     - High-level vs. Low-level programming: High-level languages like Python are easier and faster to write but might not provide the required performance for complex games. Low-level languages like C++ offer more control but can increase development time due to complexity.
     - Readability and Maintainability: Easier-to-read languages (like C#) can reduce development time and make it easier for teams to collaborate, maintain, and scale the codebase.
@@ -69,4 +65,12 @@ GPT concluded this question by saying:
     while still delivering reasonable performance. They are popular in engines like Unity and for mobile games.
     - Ease-of-Use, Lower Performance: High-level and scripting languages like Python, Lua, and UnrealScript favor ease-of-use, enabling rapid development and 
     iteration but are typically not suited for performance-critical systems. These are ideal for less intensive tasks like scripting game mechanics or prototyping.
-    
+
+## History of programming languages in game development
+Game development has transformed with computer technology and software over the decades. The largest driving factor certainly has to do with hardware. Games used to be programmed using assembly code, which allowed developers to interface at the lowest level with the hardware. This was necessary because of the poor specifications of computer hardware. GPUs were an especially potent bottleneck for performance; a 2kB memory could not feasibly support any sort of video game. Some games written in assembly are Pong (1972) and Space Invaders (1978). Even during the rise of C and home computers, some developers still used assembly for its unique and complete access to hardware, such as the original Age of Empires title (1997). This choice was made to optimize sprite loading.[^1]
+
+As PCs became more prolific and their hardware improved, developers began using C in the 70s-80s. The advent of abstraction and more mainstream portability made development easier while still affording intimate access to hardware. As C++ was released and began seeing mainstream adoption in game development in the 90s, programming paradigms such as OOP became heavily influential in development. Furthermore, the Unreal Engine game engine was first released in 1998, which utilized C++. The mainstream adoption of game engines moving forward heavily impacted how games were developed, especially because it allowed the separation of engine logic from game logic. This vastly simplified the development process and allowed for more people to enter the game development scene. As game engines improved, native support for higher-level scripting languages also opened the door for the common person to pick up game development, even as a hobby. 
+
+## References
+[The Evolution of Programming Languages for Gaming](https://uforika.medium.com/the-evolution-of-programming-languages-for-gaming-a-journey-into-the-digital-worlds-04cfa673a6bd)
+[Comparison of Programming Languages in Game Development](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.researchgate.net/profile/Mirza-Masood/publication/342804594_Comparison_of_Programming_Languages_in_Game_Development/links/5f07031045851550509840f1/Comparison-of-Programming-Languages-in-Game-Development.pdf)
