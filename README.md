@@ -73,4 +73,5 @@ As PCs became more prolific and their hardware improved, developers began using 
 
 ## References
 [The Evolution of Programming Languages for Gaming](https://uforika.medium.com/the-evolution-of-programming-languages-for-gaming-a-journey-into-the-digital-worlds-04cfa673a6bd)
-[Comparison of Programming Languages in Game Development](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.researchgate.net/profile/Mirza-Masood/publication/342804594_Comparison_of_Programming_Languages_in_Game_Development/links/5f07031045851550509840f1/Comparison-of-Programming-Languages-in-Game-Development.pdf)
+[Comparison of Programming Languages in Game Development](https://www.researchgate.net/profile/Mirza-Masood/publication/342804594_Comparison_of_Programming_Languages_in_Game_Development/links/5f07031045851550509840f1/Comparison-of-Programming-Languages-in-Game-Development.pdf)
+
