@@ -28,7 +28,7 @@ GPT's answer also touched on the following important topics:
 From this answer, it seems like the viability of the language greatly reflects the needs and scope of the game. Low-level languages, such as C++, are more suitable for very complex titles, such as AAA titles, where script behavior can be heavily monitored and manipulated. However, low-level languages are less readable and can impinge on the development process. The target platform needs to be considered. Consoles like Xbox and PlayStation are only compatible with C, C++, and C#.[^1]
 
 #### Followup: Specifically, what characteristics of C++ make it so viable for game development?
-I thought that GPT's answer was a convincing argument for the superiority of C++ over other development languages. I was curious as to what specifically makes it so viable.
+I thought that GPT's answer was a convincing argument for the superiority of C++ over other development languages for raw computing speed. I was curious as to what specifically makes it so viable.
 
     1. High Performance
     - Low-level Memory Control: C++ allows developers to manage memory manually through features like dynamic memory allocation and direct memory access (pointers). This level of control is crucial in games, where optimizing memory usage can significantly impact performance, especially in large, complex environments.
