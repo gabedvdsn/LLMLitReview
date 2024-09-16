@@ -75,3 +75,9 @@ As PCs became more prolific and their hardware improved, developers began using 
 [The Evolution of Programming Languages for Gaming](https://uforika.medium.com/the-evolution-of-programming-languages-for-gaming-a-journey-into-the-digital-worlds-04cfa673a6bd)\
 [Comparison of Programming Languages in Game Development](https://www.researchgate.net/profile/Mirza-Masood/publication/342804594_Comparison_of_Programming_Languages_in_Game_Development/links/5f07031045851550509840f1/Comparison-of-Programming-Languages-in-Game-Development.pdf)
 
+## Discord Summary
+I (also) wrote my literature review on programming languages in game development, specifically on what makes a language viable or not viable for game development. I mainly wanted to focus on what characteristics of languages are best fit for handling the complex systems involved in games, and the different scopes of optimization between low and high level languages. C++ has been a popular choice for game development due to its close-to-hardware access and ability to explicitly manage memory and garbage collection. It improved on the abilities of C by allowing for abstraction, which is a critical design paradigm in game development. This was especially critical for games pre-2000, when hardware bottlenecked the performance capabilities of games. While low level languages afford unique access to these important systems, they lack in accessibility. Mid-level languages, such as Java and C#, are far more accessible but lack the manual control afforded by C/C++. One way that modern game engines continue to provide support for optimized behavior is through DSLs (domain specific languages), such as shader graphs, which interact with the GPU directly.
+
+Check out my whole report:
+https://github.com/gabedvdsn/LLMLitReview/edit/main/README.md
+
